@@ -2,11 +2,10 @@ import numpy as np
 
 # Part 1
 
-data = np.loadtxt('input.txt')
+data = np.loadtxt('input01.txt')
 list1, list2 = (np.sort(data[:, 0]), np.sort(data[:, 1]))
-dist = np.linalg.norm(list1 - list2, 1)
 
-print('The total distance is:', int(dist))
+print('The total distance is:', int(np.linalg.norm(list1 - list2, 1)))
 
 # Part 2
 
